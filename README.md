@@ -1,6 +1,6 @@
 # CurrencyConverter
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+The CurrencyConverter is a simple application that allows users to convert currencies between two types: Japanese Yen and the US Dollar. Within this application, one may select between tabs to convert from a specific currency or there is a tab where one can view both converters (one under the other) and upon clicking "Convert" button, the result is displayed. This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
 ## Development server
 
