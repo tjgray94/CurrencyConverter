@@ -1,0 +1,9 @@
+<div class='container'> 
+    <h4>Convert Japanese Yen to US Dollars</h4>
+    <div class='form-group'>
+        <label>Enter amount in Yen: </label>
+        <input type='number' [(ngModel)]='YenValue' required/>
+    </div>
+    <button class="btn btn-success btn-sm" (click)='YenToUSD()'>Convert</button>
+    {{ newUsdValue | currency }}
+</div>

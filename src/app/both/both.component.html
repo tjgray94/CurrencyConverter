@@ -1,0 +1,20 @@
+<p>They both work!</p>
+<div class='container'>
+    <h4>Convert US Dollars to Japanese Yen</h4>
+    <div class='form-group'>
+        <label>Enter amount in USD: </label>
+        <input type='number' [(ngModel)]='UsdValue' required/>
+    </div>
+    <button class="btn btn-success btn-sm" (click)='USDtoYen()'>Convert</button>
+    {{ newYenValue }} Yen
+</div>
+<br>
+<div class='container-fluid'> 
+    <h4>Convert Japanese Yen to US Dollars</h4>
+    <div class='form-group'>
+        <label>Enter amount in Yen: </label>
+        <input type='number' [(ngModel)]='YenValue' required/>
+    </div>
+    <button class="btn btn-success btn-sm" (click)='YenToUSD()'>Convert</button>
+    {{ newUsdValue | currency }}
+</div>
