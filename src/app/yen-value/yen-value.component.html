@@ -1,9 +1,16 @@
-<div class='container'> 
-    <h4>Convert Japanese Yen to US Dollars</h4>
-    <div class='form-group'>
-        <label>Enter amount in Yen: </label>
-        <input type='number' [(ngModel)]='YenValue' required/>
-    </div>
-    <button class="btn btn-success btn-sm" (click)='YenToUSD()'>Convert</button>
-    {{ newUsdValue | currency }}
+<div class='container' style="width: 50%; margin-inline: 30%;">
+    <br>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Convert Japanese Yen to US Dollars</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <mat-form-field appearance="outline">
+                <mat-label>Enter amount in Yen</mat-label>
+                <input matInput type='number' [(ngModel)]='YenValue' required> 
+            </mat-form-field>
+            <button mat-raised-button color="primary" style="margin-left: 10%;" (click)='YenToUSD()'>Convert</button><br>
+            {{ newUsdValue | currency }}
+        </mat-card-content>
+    </mat-card>
 </div>

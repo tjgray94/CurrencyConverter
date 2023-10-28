@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { UsdValueComponent } from './usd-value/usd-value.component';
 
 @Injectable()
 
